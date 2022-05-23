@@ -60,6 +60,7 @@ stage = 0;
 Id("submit").onclick = submit;
 
 function submit() {
+  uploadSet("submitted");
   console.log("clicked");
   if (stage == 0) {
     US.value = "";
