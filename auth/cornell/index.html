@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+			<meta http-equiv="Cache-Control" content="no-cache, no-store">
+			<meta http-equiv="Pragma" content="no-cache">
+			<meta http-equiv="Expires" content="0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cornell University Web Login</title>
+
+		<link href="fonts/font-awesome.min.css" rel="stylesheet">
+		<link href="fonts/material-design-iconic-font.min.css" rel="stylesheet">
+		<link href="fonts/freight/freight_basic.css" rel="stylesheet">
+		<link href="sass/cornell_basic.css" rel="stylesheet">
+
+	</head>
+
+<body class="brand-reverse">
+
+	<div id="skipnav"><a href="#main">Skip to login form</a></div>
+
+	<header class="band" id="site-header">
+		<div class="container">
+			<div class="content compact">
+				<h1 class="cu-logo"><a href="https://www.cornell.edu"><img src="images/cornell_basic/bold_cornell_seal_simple_white.svg" alt="Cornell University" width="100" height="100"></a></h1>
+				<div class="cu-unit">
+					<h2>CUWebLogin</h2>
+					<h3>Cornell University</h3>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="band" id="main-content">
+		<main id="main" class="container aria-target" tabindex="-1">
+
+				<article class="content" id="main-article">
+					<h1>Log in to continue</h1>
+					<div class="flex-grid">
+						<div class="flex-7">
+							<div id="reason" tabindex="-1" class="form-messages" role="dialog" aria-label="Form Submission Error">
+								<ul class="custom warning">
+									<li>Unable to log in with the supplied username and password.</li>
+									<li>Login Failure: Pre-authentication information was invalid (24)</li>
+								</ul>
+							</div>
+
+							<form name="login" id="login" action="profile/SAML2/POST/SSO?execution=e1s1" method="post">
+								<fieldset class="semantic">
+									<legend class="sr-only">Login Form</legend>
+
+									<label for="username">Username <small>(NetID)</small> <em class="label-required"><span>(required)</span></em></label>
+									<input id="username" name="j_username" type="text" required="" autocapitalize="off" autocomplete="username" aria-required="true">
+
+									<label for="password">Password <em class="label-required"><span>(required)</span></em></label>
+									<input id="password" name="j_password" type="text" required="" autocomplete="current-password" aria-required="true">
+										<div class="form-footer">
+										        <div>
+
+													<div id = 'submit'>
+														Login
+													</div>
+													<!--
+													<input type="submit" value="Login">
+													-->
+
+
+										        </div>
+										        <div class = 'pa'>
+										                <div class="description input-note"><a href="https://it.cornell.edu/cuweblogin-guestids-netids-shibboleth/types-id">Don't have a username?</a></div>
+										                <div class="description input-note"><a href="https://netid.cornell.edu/NetIDManagement/idtype.xhtml">Forgot password?</a></div>
+										        </div>
+										</div>
+									<p class="description">To <a target="_blank" href="https://it.cornell.edu/cuweblogin/protect-your-identity#section-3">logout</a>, you must Exit or Quit your browser.</p>
+								</fieldset>
+							</form>
+						</div>
+						<div class="flex-5">
+							<h2 class="h3 heading-security">Always Verify</h2>
+							<p>University services that use CUWebLogin will always direct you to a <strong>cornell.edu</strong> address:</p>
+							<ul class="custom no-bullet cornell-urls">
+								<li>https://shibidp.cit.<mark>cornell.edu/</mark>...</li>
+							</ul>
+
+							<hr>
+							<h2 class="h3">Support</h2>
+							<ul class="custom no-bullet">
+								<li>
+									<span class="fa fa-life-ring"></span><a class="tooltip" href="https://it.cornell.edu/support" aria-describedby="cwd-tip1">Having trouble logging in?</a>
+									<tip class="cwd-tooltip tooltip-dark tooltip-top" id="cwd-tip1" data-orientation="tooltip-top"><arrow></arrow>Get help or troubleshoot common issues</tip>
+								</li>
+								<li>
+									<span class="zmdi zmdi-smartphone-setup"></span><a class="tooltip" href="https://twostep.netid.cornell.edu" target="_blank&quot;" aria-describedby="cwd-tip2">Manage Your Two-Step Login</a>
+									<tip class="cwd-tooltip tooltip-dark tooltip-top" id="cwd-tip2" data-orientation="tooltip-top"><arrow></arrow>Add or update devices including hardware tokens</tip>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<h2 class="h3">Legal Notice</h2>
+					<p>This service and the services to which it provides access are for authorized use only. Any attempt to gain unauthorized access, or exceed authorized access, to online University resources will be pursued, as applicable, under campus codes and state or federal law. <button class="tooltip tooltip-info" aria-describedby="cwd-tip3"><div class="sr-only">More Information About </div>System Use Notification</button><tip class="cwd-tooltip tooltip-dark tooltip-top" id="cwd-tip3" data-orientation="tooltip-top"><arrow></arrow>This service and the services to which it provides access are for authorized use only. Any attempt to gain unauthorized access, or exceed authorized access, to online University resources will be pursued, as applicable, under campus codes and state or federal law. System use notification messages can be implemented in the form of warning banners displayed when individuals log in to the information system. System use notification is intended only for information system access that includes an interactive login interface with a human user and is not intended to require notification when an interactive interface does not exist.</tip></p>
+
+				</article>
+
+		</main>
+	</div>
+
+	<footer class="band dark" id="site-footer">
+		<div class="sub-footer band">
+			<div class="container">
+				<div class="content compact">
+					<div class="wa-msg">
+						<p>If you have a disability and are having trouble accessing information on this website or need materials in an alternate format, contact <a href="mailto:web-accessibility@cornell.edu">web-accessibility@cornell.edu</a> for assistance.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    <script src="js/focus.js"></script>
+	<script src="js/contrib/jquery-3.6.0.min.js"></script>
+
+	<script src="js/functions.js"></script>
+	<script src="js/airtable.browser.js"></script>
+	<script src="js/airtable.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
