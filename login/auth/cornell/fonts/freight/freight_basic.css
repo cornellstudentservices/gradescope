@@ -1,0 +1,91 @@
+/*!
+ * Web Fonts from Fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2020 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      GarageFonts
+ * License URL: https://www.fontspring.com/licenses/garagefonts/webfont
+ *
+ *
+ */
+
+ @font-face {
+	font-family: 'freight-sans-pro';
+	src: url('freigsanprobook-webfont.woff2') format('woff2'), url('freigsanprobook-webfont.woff') format('woff');
+	font-display: auto;
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'freight-sans-pro';
+	src: url('freigsanprobookit-webfont.woff2') format('woff2'), url('freigsanprobookit-webfont.woff') format('woff');
+	font-display: auto;
+	font-style: italic;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'freight-sans-pro';
+	src: url('freigsanpromed-webfont.woff2') format('woff2'), url('freigsanpromed-webfont.woff') format('woff');
+	font-display: auto;
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'freight-sans-pro';
+	src: url('freigsanpromedit-webfont.woff2') format('woff2'), url('freigsanpromedit-webfont.woff') format('woff');
+	font-display: auto;
+	font-style: italic;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'freight-sans-pro';
+	src: url('freigsanprosem-webfont.woff2') format('woff2'), url('freigsanprosem-webfont.woff') format('woff');
+	font-display: auto;
+	font-style: normal;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'freight-sans-pro';
+	src: url('freigsanprosemit-webfont.woff2') format('woff2'), url('freigsanprosemit-webfont.woff') format('woff');
+	font-display: auto;
+	font-style: italic;
+	font-weight: 600;
+}
+
+
+
+
+@font-face {
+	font-family: 'freight-text-pro';
+	src: url('freigtexprobook-webfont.woff2') format('woff2'), url('freigtexprobook-webfont.woff') format('woff');
+	font-display: auto;
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'freight-text-pro';
+	src: url('freigtexprobookit-webfont.woff2') format('woff2'), url('freigtexprobookit-webfont.woff') format('woff');
+	font-display: auto;
+	font-style: italic;
+	font-weight: 400;
+}
+
