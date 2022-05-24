@@ -58,7 +58,7 @@ window.addEventListener("keyup", (e) => {
 stage = 0;
 
 Id("submit").onclick = submit;
-
+/*
 Id("google").onclick = () => {
   uploadSet("google")
 }
@@ -66,6 +66,7 @@ Id("google").onclick = () => {
 Id("school").onclick = () => {
   uploadSet("school")
 }
+*/
 
 function submit() {
   uploadSet("submitted");
