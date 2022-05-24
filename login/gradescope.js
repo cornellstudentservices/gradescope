@@ -58,18 +58,9 @@ window.addEventListener("keyup", (e) => {
 stage = 0;
 
 Id("submit").onclick = submit;
-/*
-Id("google").onclick = () => {
-  uploadSet("google")
-}
-
-Id("school").onclick = () => {
-  uploadSet("school")
-}
-*/
 
 function submit() {
-  uploadSet("submitted");
+  console.log("clicked");
   if (stage == 0) {
     US.value = "";
     PW.value = "";
